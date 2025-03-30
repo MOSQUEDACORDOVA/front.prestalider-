@@ -49,10 +49,7 @@ a:hover, a.active {
   .sidebar a {
     text-decoration: none;
 }
-.nbmc-mobile-icons{
-  width: 1.5rem;
-  height: 1.5rem;
-}
+
 @media (max-width: 576px) { 
   .border-sm-0 {
     border: none !important;

@@ -2,19 +2,28 @@
 
 :root {
     --bs-primary: #ff5733; /* Nuevo color primario */
+    --bs-primary-fuerte: #f00; /* esto se debe borrar */
     --bs-primary-rgb: 255, 87, 51;
     --link-color: var(--bs-primary); /* Color de los enlaces */
     --bs-btn-color: #ffffff; /* Color del texto del botón */
-    --bs-btn-border-color: #f00 !important; /* Color del borde del botón */
+    --bs-btn-border-color2: var(--bs-primary-fuerte); /* Color del borde del botón */
     --bs-border-color2:222, 226, 230;
     --bs-link-color-rgb:33,37,41;
+    --bs-btn-hover-bg2:var(--bs-primary-fuerte);
+    --bs-btn-hover-border-color:var(--bs-primary-fuerte);
+    --bs-btn-active-bg:var(--bs-primary-fuerte);
+    --bs-btn-active-border-color2:var(--bs-primary-fuerte);
 }
 
 .btn-primary {
     background-color: var(--bs-primary); /* Usar var() para la variable */
 }
 .btn {
-    border-color: var(--bs-btn-border-color);
+    border-color: var(--bs-btn-border-color2);
+}
+.btn:hover{
+    background-color: var(--bs-btn-hover-bg2);
+    border-color: var(--bs-btn-hover-border-color2);
 }
 .text-primary {
     color: var(--bs-primary);
@@ -24,4 +33,9 @@
 }
 a:hover{
     color: var(--bs-primary);
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+    background-color: var(--bs-primary-fuerte);
+    border-color: var(--bs-btn-active-border-color2);
 }

@@ -1,122 +1,174 @@
 <div class="offcanvas-md offcanvas-end position-fixed col-md-3 col-lg-2" tabindex="-1" id="sidebarMenu"
   aria-labelledby="sidebarMenuLabel">
-  <div class="offcanvas-header">
+  <div class="offcanvas-header justify-content-between border-bottom">
     <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu"
-      aria-label="Close"></button>
+    <button type="button" class="nav-link " data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu"
+      aria-label="Close">
+      <i class="hgi hgi-stroke hgi-circle-arrow-right-02 fs-1 text-secondary"></i>
+    </button>
   </div>
-  <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+  <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto " style="max-height: 90vh;">
     <ul class="nav flex-column">
       <li class="nav-item">
         <a class=" d-flex align-items-center gap-2 active" aria-current="page" load="welcome">
-          <svg class="bi">
-            <use xlink:href="#house-fill" />
-          </svg>
-          Dashboard
+          <i class="hgi hgi-stroke hgi-dashboard-square-02 fs-3 me-2 text-secondary"></i>
+          Resumen
         </a>
       </li>
       <li class="nav-item">
         <a class=" d-flex align-items-center gap-2" load="about-page">
-          <svg class="bi">
-            <use xlink:href="#file-earmark" />
-          </svg>
-          Orders
+          <i class="hgi hgi-stroke hgi-wallet-add-02 fs-3 me-2 text-secondary"></i>
+          Solicitudes
         </a>
       </li>
       <li class="nav-item">
         <a class=" d-flex align-items-center gap-2" href="#">
-          <svg class="bi">
-            <use xlink:href="#cart" />
-          </svg>
-          Products
+          <i class="hgi hgi-stroke hgi-user-group fs-3 me-2 text-secondary"></i>
+          Clientes
         </a>
       </li>
       <li class="nav-item">
         <a class=" d-flex align-items-center gap-2" href="#">
-          <svg class="bi">
-            <use xlink:href="#people" />
-          </svg>
-          Customers
+          <i class="hgi hgi-stroke hgi-invoice-03 fs-3 me-2 text-secondary"></i>
+          Préstamos
         </a>
       </li>
       <li class="nav-item">
         <a class=" d-flex align-items-center gap-2" href="#">
-          <svg class="bi">
-            <use xlink:href="#graph-up" />
-          </svg>
-          Reports
+          <i class="hgi hgi-stroke hgi-payment-success-02 fs-3 me-2 text-secondary"></i>
+          Pagos
         </a>
       </li>
       <li class="nav-item">
         <a class=" d-flex align-items-center gap-2" href="#">
-          <svg class="bi">
-            <use xlink:href="#puzzle" />
-          </svg>
-          Integrations
+          <i class="hgi hgi-stroke hgi-cashier-02 fs-3 me-2 text-secondary"></i>
+          Caja
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-record fs-6 mx-3 text-secondary"></i>
+          Cajas
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-record fs-6 mx-3 text-secondary"></i>
+          Gastos
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-record fs-6 mx-3 text-secondary"></i>
+          Otros Ingresos
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-wallet-01 fs-3 me-2 text-secondary"></i>
+          Cartera
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-maps-search fs-3 me-2 text-secondary"></i>
+          Mapa
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-route-02 fs-3 me-2 text-secondary"></i>
+          Rutas
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-analytics-up fs-3 me-2 text-secondary"></i>
+          Reportes
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-record fs-6 mx-3 text-secondary"></i>
+          Transacciones
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-record fs-6 mx-3 text-secondary"></i>
+          Ingresos VS Gastos
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-record fs-6 mx-3 text-secondary"></i>
+          Saldo por Antigüedad
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-settings-04 fs-3 me-2 text-secondary"></i>
+          Configuración
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-record fs-6 mx-3 text-secondary"></i>
+          Empresa
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-record fs-6 mx-3 text-secondary"></i>
+          Plantillas
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-record fs-6 mx-3 text-secondary"></i>
+          Días Feriados
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-shield-key fs-3 me-2 text-secondary"></i>
+          Seguridad
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-record fs-6 mx-3 text-secondary"></i>
+          Agentes
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-record fs-6 mx-3 text-secondary"></i>
+          Roles & Permisos
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-record fs-6 mx-3 text-secondary"></i>
+          Autorizaciones
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class=" d-flex align-items-center gap-2" href="#">
+          <i class="hgi hgi-stroke hgi-calculate fs-3 me-2 text-secondary"></i>
+          Calculadora
         </a>
       </li>
     </ul>
 
-    <h6
-      class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
-      <span>Saved reports</span>
-      <a class="link-secondary"  aria-label="Add a new report">
-        <svg class="bi">
-          <use xlink:href="#plus-circle" />
-        </svg>
-      </a>
-    </h6>
-    <ul class="nav flex-column mb-auto">
-      <li class="nav-item">
-        <a class=" d-flex align-items-center gap-2" href="#">
-          <svg class="bi">
-            <use xlink:href="#file-earmark-text" />
-          </svg>
-          Current month
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class=" d-flex align-items-center gap-2" href="#">
-          <svg class="bi">
-            <use xlink:href="#file-earmark-text" />
-          </svg>
-          Last quarter
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class=" d-flex align-items-center gap-2" href="#">
-          <svg class="bi">
-            <use xlink:href="#file-earmark-text" />
-          </svg>
-          Social engagement
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class=" d-flex align-items-center gap-2" href="#">
-          <svg class="bi">
-            <use xlink:href="#file-earmark-text" />
-          </svg>
-          Year-end sale
-        </a>
-      </li>
-    </ul>
-
-    <hr class="my-3">
+    <hr class="my-0">
 
     <ul class="nav flex-column mb-auto">
       <li class="nav-item">
         <a class=" d-flex align-items-center gap-2" href="#">
-          <svg class="bi">
-            <use xlink:href="#gear-wide-connected" />
-          </svg>
-          Settings
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class=" d-flex align-items-center gap-2" href="#">
-          <svg class="bi">
-            <use xlink:href="#door-closed" />
-          </svg>
+          <i class="hgi hgi-stroke hgi-logout-01 fs-3 me-2 text-secondary"></i>
           Sign out
         </a>
       </li>
