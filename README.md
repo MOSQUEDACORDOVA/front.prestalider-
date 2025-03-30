@@ -39,3 +39,6 @@ For more information, visit https://playwright.dev/docs/test-cli
 # FIREBASE
 firebase init
 firebase deploy --only hosting
+
+# LOGOS
+convert favicon.png -resize 48x48 favicon.ico
