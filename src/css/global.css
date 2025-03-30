@@ -1,0 +1,27 @@
+/* Esta e suna forma temporal de delcarar las variables de bootstrap */
+
+:root {
+    --bs-primary: #ff5733; /* Nuevo color primario */
+    --bs-primary-rgb: 255, 87, 51;
+    --link-color: var(--bs-primary); /* Color de los enlaces */
+    --bs-btn-color: #ffffff; /* Color del texto del botón */
+    --bs-btn-border-color: #f00 !important; /* Color del borde del botón */
+    --bs-border-color2:222, 226, 230;
+    --bs-link-color-rgb:33,37,41;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary); /* Usar var() para la variable */
+}
+.btn {
+    border-color: var(--bs-btn-border-color);
+}
+.text-primary {
+    color: var(--bs-primary);
+}
+.border-end {
+    border-color: var(--bs-border-color2);
+}
+a:hover{
+    color: var(--bs-primary);
+}
