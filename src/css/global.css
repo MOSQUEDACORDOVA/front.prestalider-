@@ -1,4 +1,5 @@
 /* Esta e suna forma temporal de delcarar las variables de bootstrap */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
     --bs-primary: #ff5733; /* Nuevo color primario */
@@ -14,7 +15,10 @@
     --bs-btn-active-bg:var(--bs-primary-fuerte);
     --bs-btn-active-border-color2:var(--bs-primary-fuerte);
 }
-
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F1F4F8;
+}
 .btn-primary {
     background-color: var(--bs-primary); /* Usar var() para la variable */
 }
