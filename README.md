@@ -35,3 +35,7 @@ Run e2e tests with:
 Note the playwright config automatically runs "npm start" before playwright.
 
 For more information, visit https://playwright.dev/docs/test-cli
+
+# FIREBASE
+firebase init
+firebase deploy --only hosting
