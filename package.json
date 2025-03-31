@@ -11,7 +11,8 @@
     "@aurelia/router": "latest",
     "@popperjs/core": "^2.11.8",
     "aurelia": "latest",
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.8"
   },
   "devDependencies": {
     "@aurelia/testing": "latest",

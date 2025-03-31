@@ -5,3 +5,32 @@ li a {
 .badge-color {
     background-color: #39D2C0;
 }
+
+.offcanvas-body {
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: rgba(128, 128, 128, 0.6) transparent; /* Gris bonito */
+    overflow-y: auto; /* Asegura que el scroll funcione */
+  }
+  
+  /* Para navegadores basados en WebKit (Chrome, Edge, Safari) */
+  .offcanvas-body::-webkit-scrollbar {
+    width: 8px; /* Grosor de la barra */
+  }
+  
+  .offcanvas-body::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.6); /* Gris elegante */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* Al pasar el cursor, la barra se oscurece un poco */
+  .offcanvas-body:hover::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.8);
+  }
+  
+  /* Fondo de la barra de scroll */
+  .offcanvas-body::-webkit-scrollbar-track {
+    background: rgba(200, 200, 200, 0.4); /* Un gris muy claro */
+    border-radius: 4px;
+  }
+  

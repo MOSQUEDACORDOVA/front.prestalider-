@@ -47,6 +47,43 @@
 
 <body>
   <my-app></my-app>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const ctx = document.getElementById("myChart").getContext("2d");
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo"],
+          datasets: [
+            {
+              label: "Ingresos",
+              data: [1200, 1900, 3000, 500, 2200],
+              backgroundColor: "rgba(75, 192, 192, 0.5)",
+              borderColor: "rgba(75, 192, 192, 1)",
+              borderWidth: 1,
+            },
+            {
+              label: "Egresos",
+              data: [800, 1200, 1800, 200, 1500],
+              backgroundColor: "rgba(255, 99, 132, 0.5)",
+              borderColor: "rgba(255, 99, 132, 1)",
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    });
+  </script>
+  
 </body>
 
 

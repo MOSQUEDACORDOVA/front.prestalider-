@@ -11,6 +11,7 @@ export default defineConfig({
   esbuild: {
     target: 'es2022'
   },
+  
   plugins: [
     aurelia({
       useDev: true,

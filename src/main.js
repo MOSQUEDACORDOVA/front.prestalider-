@@ -4,6 +4,7 @@ import { MyApp } from './my-app';
 
 //Dependecias Globlales
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './views/welcome/welcome.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './css/random.css';
 import './css/global.css';
