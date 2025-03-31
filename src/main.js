@@ -9,6 +9,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './css/random.css';
 import './css/global.css';
 import './css/solicitudes-cliente.css';
+import './css/andres.css';
 
 Aurelia
   //.register(RouterConfiguration)
