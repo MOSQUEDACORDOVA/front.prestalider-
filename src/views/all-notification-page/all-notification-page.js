@@ -1,3 +1,3 @@
-export class ClientPage {
+export class AllNotificationPage {
     // Class methods and properties here
  }

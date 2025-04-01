@@ -1,0 +1,78 @@
+<template>
+  <h2 class="mt-4">Todas Las Notificaciones</h2>
+
+
+  <div class="main-container">
+    <!-- Header con búsqueda y exportar -->
+    <div class="header-table">
+      <div class="search-container">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" class="form-control" placeholder="Buscar...">
+      </div>
+      <div class="header-actions">
+        <span class="pending-badge">Pendiente</span>
+        <button class="btn btn-export">EXPORTAR</button>
+      </div>
+    </div>
+
+    <!-- Tabla de registros -->
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th>Acciones</th>
+            <td>Fecha</td>
+            <td>Notificacion</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="action-buttons">
+                <button class="btn-action btn-view" title="Ver detalles">
+                  <i class="hgi hgi-stroke hgi-eye fs-5"></i>
+                </button>
+                <button class="btn-action btn-edit" title="Editar registro">
+                  <i class="hgi hgi-stroke hgi-pencil-edit-02 fs-5"></i>
+                </button>
+                <button class="btn-action btn-delete" title="Eliminar registro">
+                  <i class="hgi hgi-stroke hgi-delete-02 fs-5"></i>
+                </button>
+              </div>
+            </td>
+            <td>15/03/2023 07:01 pm</td>
+            <td><strong>Nueva Solicitud</strong><br>Juan Pérez González</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="action-buttons">
+                <button class="btn-action btn-view" title="Ver detalles">
+                  <i class="hgi hgi-stroke hgi-eye fs-5"></i>
+                </button>
+                <button class="btn-action btn-edit" title="Editar registro">
+                  <i class="hgi hgi-stroke hgi-pencil-edit-02 fs-5"></i>
+                </button>
+                <button class="btn-action btn-delete" title="Eliminar registro">
+                  <i class="hgi hgi-stroke hgi-delete-02 fs-5"></i>
+                </button>
+              </div>
+            </td>
+            <td>15/03/2023 07:01 pm</td>
+            <td><strong>Nueva Solicitud</strong><br>Juan Pérez González</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Estado vacío -->
+    <div class="empty-state">
+      <img src="https://cdn-icons-png.flaticon.com/512/4076/4076478.png" alt="No hay registros">
+      <p>No tienes Registros!</p>
+    </div>
+  </div>
+
+  <!-- Botón flotante para agregar -->
+  <a href="#" class="btn-floating">
+    <i class="hgi hgi-stroke hgi-plus-sign-circle fs-3"></i>
+  </a>
+</template>

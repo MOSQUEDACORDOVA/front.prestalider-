@@ -12,10 +12,11 @@
   </div>
 
   <div class="d-none d-md-flex col-md-9 col-lg-10 justify-content-end px-3 gap-2 ">
-    
-    <button class="btn  border border-dark bg-transparent rounded-circle" type="button">
-      <i class="hgi  hgi-stroke hgi-notification-03 fs-5"></i>
-    </button>
+
+    <!-- Importación del componente NotificationComponent -->
+    <import from="../notification-component/notification-component"></import>
+    <!-- Usando el componente NotificationComponent -->
+    <notification-component></notification-component>
     <button class="btn  border border-dark bg-transparent rounded-circle" type="button">
       <i class="hgi hgi-stroke hgi-moon-02 fs-5"></i>
     </button>
@@ -35,12 +36,18 @@
           <i class="hgi hgi-stroke hgi-search-01 fs-4"></i>
         </button>
       </li>-->
-    <li class="nav-item text-nowrap">
-      <button class="nav-link px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu"
-        aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="hgi hgi-stroke hgi-menu-11 fs-4"></i>
-      </button>
-    </li>
+      <li class="nav-item text-nowrap">
+        <import from="../notification-component/notification-component"></import>
+        <!-- Usando el componente NotificationComponent -->
+        <notification-component></notification-component>
+      </li>
+      <li class="nav-item text-nowrap">
+        
+        <button class="nav-link px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu"
+          aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="hgi hgi-stroke hgi-menu-11 fs-4"></i>
+        </button>
+      </li>
   </ul>
 
   <div id="navbarSearch" class="navbar-search w-100 collapse">

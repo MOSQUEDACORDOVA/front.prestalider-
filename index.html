@@ -83,6 +83,39 @@
       });
     });
   </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      // Get elements
+      const solicitarLink = document.getElementById('solicitar-link');
+      const consultarLink = document.getElementById('consultar-link');
+      const solicitarContent = document.getElementById('solicitar-content');
+      const consultarContent = document.getElementById('consultar-content');
+      
+      // Function to show solicitar content
+      function showSolicitar() {
+          solicitarLink.classList.add('active');
+          consultarLink.classList.remove('active');
+          solicitarContent.classList.add('active');
+          consultarContent.classList.remove('active');
+      }
+      
+      // Function to show consultar content
+      function showConsultar() {
+          consultarLink.classList.add('active');
+          solicitarLink.classList.remove('active');
+          consultarContent.classList.add('active');
+          solicitarContent.classList.remove('active');
+      }
+      
+      // Add event listeners
+      solicitarLink.addEventListener('click', showSolicitar);
+      consultarLink.addEventListener('click', showConsultar);
+      
+      // Show solicitar content by default
+      showSolicitar();
+  });
+</script>
   
 </body>
 

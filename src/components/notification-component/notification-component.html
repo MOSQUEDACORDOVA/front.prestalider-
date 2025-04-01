@@ -1,0 +1,104 @@
+<!-- NOTIFICACIONES -->
+<div class="dropdown">
+  <button class="btn border border-dark bg-transparent rounded-circle position-relative notification-btn"
+    type="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="hgi hgi-stroke hgi-notification-03 fs-5"></i>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary notification-badge">
+      6
+      <span class="visually-hidden">unread notifications</span>
+    </span>
+  </button>
+    <!-- Notification Dropdown -->
+    <div class="dropdown-menu dropdown-menu-end notification-panel p-0 w-100 w-sm-auto" 
+       aria-labelledby="notificationDropdown"
+       style="max-width: 360px; min-width: 280px;">
+    <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+      <h6 class="mb-0">Notifications</h6>
+      <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill">6 New</span>
+    </div>
+
+    <div class="notification-list" style="max-height: 400px; overflow-y: auto;">
+      <!-- User Notifications -->
+      <div class="notification-item d-flex p-3 border-bottom">
+        <div class="flex-shrink-0">
+          <img src="https://ui-avatars.com/api/?name=User&background=random" class="rounded-circle" width="40"
+            height="40" alt="">
+        </div>
+        <div class="flex-grow-1 ms-3 overflow-hidden">
+          <p class="mb-0 fw-medium text-truncate">Congratulation Sam 🎉 winner!</p>
+          <p class="text-muted small mb-0 text-truncate">Won the monthly best seller badge.</p>
+          <small class="text-muted">Updated 1 month ago</small>
+        </div>
+      </div>
+
+
+        <div class="notification-item d-flex p-3 border-bottom">
+          <div class="flex-shrink-0">
+            <img src="https://ui-avatars.com/api/?name=User&background=random" class="rounded-circle" width="40"
+              height="40" alt="">
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <p class="mb-0 fw-medium">New message received</p>
+            <p class="text-muted small mb-0">You have 10 unread messages</p>
+            <small class="text-muted">Updated 1 month ago</small>
+          </div>
+        </div>
+
+        <div class="notification-item d-flex p-3 border-bottom">
+          <div class="flex-shrink-0">
+            <img src="https://ui-avatars.com/api/?name=User&background=random" class="rounded-circle" width="40"
+              height="40" alt="">
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <p class="mb-0 fw-medium">Revised Order 👋 checkout</p>
+            <p class="text-muted small mb-0">MD Inc. order updated</p>
+            <small class="text-muted">Updated 1 month ago</small>
+          </div>
+        </div>
+
+        <!-- System Notifications Toggle -->
+        <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+          <h6 class="mb-0 small">System Notifications</h6>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="systemNotificationsToggle" checked>
+            <label class="form-check-label" for="systemNotificationsToggle"></label>
+          </div>
+        </div>
+
+        <!-- System Notifications -->
+        <div id="systemNotifications">
+          <div class="notification-item d-flex p-3 border-bottom">
+            <div class="flex-shrink-0">
+              <div
+                class="status-icon bg-danger-subtle text-danger rounded-circle d-flex align-items-center justify-content-center">
+                <i class="hgi hgi-stroke hgi-close fs-5"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <p class="mb-0 fw-medium">Server down registered</p>
+              <p class="text-muted small mb-0">USA Server is down due to hight CPU usage</p>
+            </div>
+          </div>
+
+          <div class="notification-item d-flex p-3 border-bottom">
+            <div class="flex-shrink-0">
+              <div
+                class="status-icon bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center">
+                <i class="hgi hgi-stroke hgi-check fs-5"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <p class="mb-0 fw-medium">Sales report generated</p>
+              <p class="text-muted small mb-0">Last month sales report generated</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Read All Button -->
+      <div class="p-2">
+        <button class="btn button-color-g w-100" id="readAllBtn" href="#/all-notifications">Read all notifications</button>
+      </div>
+    </div>
+  </div>
+  <!-- FIN DE NOTIFICACIONES -->
