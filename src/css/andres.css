@@ -379,7 +379,6 @@
 }
 
 .search-container .form-control {
-    padding-left: 35px;
     border-radius: 4px;
     border: 1px solid #ddd;
     height: 38px;
@@ -408,15 +407,7 @@
     font-weight: 500;
 }
 
-.btn-export {
-    background-color: #f0f0f0;
-    border: none;
-    color: #666;
-    font-weight: 500;
-    padding: 6px 15px;
-    border-radius: 4px;
-    font-size: 13px;
-}
+
 
 .table {
     margin-bottom: 0;
@@ -472,9 +463,6 @@
     cursor: pointer;
 }
 
-.btn-view {
-    background-color: var(--primary-color);
-}
 
 .btn-edit {
     background-color: #4caf50;
@@ -509,19 +497,12 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: #39D2C0;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     font-size: 18px;
     text-decoration: none;
-}
-
-.btn-floating:hover {
-    background-color: #4ab001;
-    color: white;
 }
 
 .table-responsive {

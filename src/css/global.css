@@ -16,13 +16,16 @@
     --body-bg-color-rgb:rgb(253, 253, 255);
     --body-bg-color-rgb:rgb(253, 253, 255);
     --bs-primary-bg-subtle: #efdcff;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-hover-bg: var(--bs-primary) !important;
+    --bs-btn-hover-border-color: var(--bs-primary-fuerte) !important;
+    --bs-btn-bg:#BD6DFF !important;
 }
+
 body{
     background-color: var(--body-bg-color-rgb);
 }
-.btn-primary {
-    background-color: var(--bs-primary); /* Usar var() para la variable */
-}
+
 .border-end {
     border-color: var(--bs-border-color2);
 }
@@ -36,4 +39,9 @@ body{
 .card{
     box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 22px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.5px;
     border:0;
+}
+
+.btn-primary, .btn-primary:hover{
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
 }
