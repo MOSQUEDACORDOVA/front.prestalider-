@@ -48,37 +48,10 @@
     background: #555;
 }
 
-.notification {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 6px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.notification .icon {
-    font-size: 18px;
-    padding: 8px;
-    background: black;
-    color: white;
-    border-radius: 100%;
-    margin-right: 10px;
-}
-
-.metric-card {
-    background-color: white;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    height: 100%;
-}
-
 .icon-circle {
     width: 60px;
     height: 60px;
-    background-color: rgba(20, 184, 166, 0.1);
-    border-radius: 50%;
+    border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,19 +94,7 @@
     flex-grow: 1;
 }
 
-.notification .buttons {
-    display: flex;
-    gap: 10px;
-}
 
-.notification .buttons button {
-    border: none;
-    background: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-}
 
 .blue {
     background-color: #b2e3e3;
@@ -191,13 +152,7 @@
     margin: 0;
 }
 
-.accounts-section {
-    background-color: white;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
+
 
 .section-title {
     font-size: 18px;
@@ -234,35 +189,13 @@
     overflow: hidden;
 }
 
-.client-info {
-    padding: 15px;
-}
 
-.client-name {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
 
-.payment-date {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 5px;
-}
 
-.payment-details {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    color: #666;
-}
 
-.payment-amount {
-    background-color: #f9f9f9;
-    padding: 15px;
-    text-align: center;
-    border-left: 1px solid #eee;
-}
+
+
+
 
 .amount-due {
     font-size: 20px;
@@ -356,7 +289,6 @@
     /* Ajusta la altura según necesites */
     overflow-y: auto;
     overflow-x: hidden;
-    padding-right: 10px;
     /* Para evitar que se sobreponga el scroll */
 }
 
@@ -369,22 +301,6 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .notification {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .notification .buttons {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .notification .buttons button {
-        width: 100%;
-    }
-}
 
 .header {
     background-color: #343a40;
@@ -438,12 +354,6 @@
 
 
 
-:root {
-    --primary-color: #4fd1cd;
-    --header-bg: #f9f9f9;
-    --border-color: #e0e0e0;
-    --table-header-bg: #e8f8f7;
-}
 
 
 .main-container {

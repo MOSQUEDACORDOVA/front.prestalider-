@@ -1,10 +1,9 @@
-/* Esta e suna forma temporal de delcarar las variables de bootstrap */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Esta es una forma temporal de delcarar las variables de bootstrap */
 
 :root {
-    --bs-primary: #ff5733; /* Nuevo color primario */
-    --bs-primary-fuerte: #f00; /* esto se debe borrar */
-    --bs-primary-rgb: 255, 87, 51;
+    --bs-primary: #BD6DFF; /* Nuevo color primario */
+    --bs-primary-fuerte: #7929bb; /* esto se debe borrar */
+    --bs-primary-rgb: 189, 109, 255;
     --link-color: var(--bs-primary); /* Color de los enlaces */
     --bs-btn-color: #ffffff; /* Color del texto del botón */
     --bs-btn-border-color2: var(--bs-primary-fuerte); /* Color del borde del botón */
@@ -14,32 +13,27 @@
     --bs-btn-hover-border-color:var(--bs-primary-fuerte);
     --bs-btn-active-bg:var(--bs-primary-fuerte);
     --bs-btn-active-border-color2:var(--bs-primary-fuerte);
+    --body-bg-color-rgb:rgb(253, 253, 255);
+    --body-bg-color-rgb:rgb(253, 253, 255);
+    --bs-primary-bg-subtle: #efdcff;
 }
 body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #F1F4F8;
+    background-color: var(--body-bg-color-rgb);
 }
 .btn-primary {
     background-color: var(--bs-primary); /* Usar var() para la variable */
 }
-.btn {
-    border-color: var(--bs-btn-border-color2);
-}
-.btn:hover{
-    background-color: var(--bs-btn-hover-bg2);
-    border-color: var(--bs-btn-hover-border-color2);
-}
-.text-primary {
-    color: var(--bs-primary);
-}
 .border-end {
     border-color: var(--bs-border-color2);
 }
-a:hover{
-    color: var(--bs-primary);
-}
+
 
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
     background-color: var(--bs-primary-fuerte);
     border-color: var(--bs-btn-active-border-color2);
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 22px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.5px;
+    border:0;
 }

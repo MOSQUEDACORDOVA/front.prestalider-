@@ -1,240 +1,184 @@
 
 <div class="container-fluid pt-3 pb-2 mb-3">
   <!-- Banners de notificación -->
-  <div class="notification blue">
 
-    <span class="notification-text"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 13.586L10.414 4H4V10.414L13.586 20L20 13.586Z" stroke="currentColor" stroke-width="2" />
-        <circle cx="7" cy="7" r="1.5" fill="currentColor" />
-      </svg> Síguenos en Instagram y obtén un 50% de descuento en tu primer mes.</span>
-    <div class="buttons">
-      <button>
-        <svg class="mr-4" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M7.5 2H16.5C20.1 2 22 3.9 22 7.5V16.5C22 20.1 20.1 22 16.5 22H7.5C3.9 22 2 20.1 2 16.5V7.5C2 3.9 3.9 2 7.5 2Z"
-            stroke="currentColor" stroke-width="2" />
-          <circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="2" />
-          <circle cx="17" cy="7" r="1" fill="currentColor" />
-        </svg>
-        Síguenos
-      </button>
-      <button><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-2h-2v2zm1-13c-4.42 0-8 3.58-8 8h2c0-3.31 2.69-6 6-6V4zm0 6h-2v6h2v-6z"
-            fill="currentColor" />
-        </svg> Ayuda</button>
+  <div class="alert alert-success d-flex align-items-center justify-content-between py-1" role="alert">
+    <i class="hgi hgi-stroke hgi-discount-tag-02 me-2 fs-4"></i>
+    <div class="w-100">
+      Síguenos en Instagram y obtén un 50% de descuento en tu primer mes.
+      <a href="#" class="alert-link">Síguenos</a>
     </div>
+    
   </div>
-  <div class="notification pink">
 
-    <span class="notification-text"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
-        <path d="M12 16V12" stroke="currentColor" stroke-width="2" />
-        <circle cx="12" cy="8" r="1" fill="currentColor" />
-      </svg> Te quedan 5 días para probar el sistema!</span>
-    <div class="buttons">
-      <button> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 2H14V5H19V8H5V5H10V2ZM19 10V21H5V10H19ZM8 13H11V18H8V13ZM13 13H16V18H13V13Z"
-            fill="currentColor" />
-        </svg> Ver tutoriales</button>
-      <button> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
-            stroke="currentColor" stroke-width="2" />
-        </svg> Comprar</button>
+  <div class="alert alert-warning d-flex align-items-center justify-content-between py-1" role="alert">
+    <i class="hgi hgi-stroke hgi-alert-01 me-2 fs-4"></i>
+    <div class="w-100">
+      Te quedan 5 días para probar el sistema!
+
+      <a href="#" class="alert-link">Ver tutoriales</a>
+      <a href="#" class="alert-link">Comprar</a>
     </div>
+    
   </div>
+
+  
+  
 
   <!-- Tarjetas de estadísticas -->
-  <div class="row g-4">
+  <div class="row g-4 my-5">
     <!-- Clientes Activos -->
-    <div class="col-md-6 col-lg-3">
-      <div class="metric-card">
-        <div class="metric-content">
-          <div class="icon-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
-          </div>
-          <div>
-            <h2 class="metric-value">10 de 30</h2>
-            <p class="metric-label">Clientes Activos</p>
-          </div>
-        </div>
+    <div class="col-md-6 col-lg-3 d-flex">
+      <div class="bg-primary-subtle icon-circle">
+        <i class="hgi hgi-stroke hgi-user-circle-02 fs-4 text-primary"></i>
+      </div>
+      <div>
+        <h2 class="metric-value">10 de 30</h2>
+        <p class="metric-label">Clientes Activos</p>
       </div>
     </div>
 
     <!-- Préstamos Activos -->
-    <div class="col-md-6 col-lg-3">
-      <div class="metric-card">
-        <div class="metric-content">
-          <div class="icon-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="6" width="20" height="12" rx="2"></rect>
-              <circle cx="12" cy="12" r="2"></circle>
-              <path d="M6 12h.01M18 12h.01"></path>
-            </svg>
-          </div>
-          <div>
-            <h2 class="metric-value">8 de 38</h2>
+    <div class="col-md-6 col-lg-3 d-flex ">
+      <div class="bg-primary-subtle icon-circle">
+        <i class="hgi hgi-stroke hgi-invoice-03 fs-4 text-primary"></i>
+      </div>
+      <div>
+        <h2 class="metric-value">8 de 38</h2>
             <p class="metric-label">Préstamos Activos</p>
-          </div>
-        </div>
       </div>
     </div>
 
     <!-- Total Prestado -->
-    <div class="col-md-6 col-lg-3">
-      <div class="metric-card">
-        <div class="metric-content">
-          <div class="icon-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"></path>
-              <path d="M20 12v4H6a2 2 0 0 0-2 2c0 1.1.9 2 2 2h12v-4"></path>
-              <path d="M20 12h2v0h-2v0Z"></path>
-            </svg>
-          </div>
-          <div>
-            <h2 class="metric-value">$2000</h2>
-            <p class="metric-label">Total Prestado</p>
-          </div>
-        </div>
+    <div class="col-md-6 col-lg-3 d-flex">
+      <div class="bg-primary-subtle icon-circle">
+        <i class="hgi hgi-stroke hgi-save-money-dollar fs-4 text-primary"></i>
+      </div>
+      <div>
+        <h2 class="metric-value">$2000</h2>
+        <p class="metric-label">Total Prestado</p>
+      </div>
+    </div>
+    <!-- Proyección de Intereses -->
+    <div class="col-md-6 col-lg-3 d-flex">
+      <div class="bg-primary-subtle icon-circle">
+        <i class="hgi hgi-stroke hgi-analytics-up fs-4 text-primary"></i>
+      </div>
+      <div>
+        <h2 class="metric-value">$10000</h2>
+            <p class="metric-label">Proyección de Intereses</p>
       </div>
     </div>
 
-    <!-- Proyección de Intereses -->
-    <div class="col-md-6 col-lg-3">
-      <div class="metric-card">
-        <div class="metric-content">
-          <div class="icon-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
-              <polyline points="16 7 22 7 22 13"></polyline>
-            </svg>
-          </div>
-          <div>
-            <h2 class="metric-value">$10000</h2>
-            <p class="metric-label">Proyección de Intereses</p>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
 
   <!-- Sección de cuentas por cobrar -->
-  <div class="row mt-4">
+  <div class="row row-gap-3">
     <div class="col-md-6">
-      <div class="accounts-section">
-        <h2 class="section-title">Cuentas por cobrar</h2>
-        <div class="row mb-4">
-          <div class="col-md-6">
-            <select class="form-select custom-select">
-              <option>Enero</option>
-              <option>Febrero</option>
-              <option>Marzo</option>
-              <option>Abril</option>
-              <option>Mayo</option>
-            </select>
-          </div>
-          <div class="col-md-6">
-            <select class="form-select custom-select">
-              <option>Todas las rutas</option>
-              <option>Ruta 1</option>
-              <option>Ruta 2</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="row mb-4">
-          <div class="col-md-6">
-            <div class="amount-box">
-              <p class="amount">$0.00</p>
-              <p class="amount-label">Ingresos</p>
+      <div class="card">
+        <div class="card-body py-0">
+          <div class="accounts-section">
+            <h2 class="section-title mt-3">Cuentas por cobrar</h2>
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <select class="form-select custom-select">
+                  <option>Enero</option>
+                  <option>Febrero</option>
+                  <option>Marzo</option>
+                  <option>Abril</option>
+                  <option>Mayo</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <select class="form-select custom-select">
+                  <option>Todas las rutas</option>
+                  <option>Ruta 1</option>
+                  <option>Ruta 2</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="amount-box">
-              <p class="amount">$0.00</p>
-              <p class="amount-label">Egresos</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tarjetas de clientes -->
-        <div class="client-card">
-          <div class="row g-0">
-            <div class="col-md-8">
-              <div class="client-info">
-                <p class="client-name">Nombre Cliente</p>
-                <p class="payment-date">Próximo pago:<br>ma, 30 may, 2025</p>
-                <div class="payment-details">
-                  <span>Pendiente: 1000$</span>
-                  <span>Modalidad: Mensual</span>
+    
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <div class="amount-box">
+                  <p class="amount">$0.00</p>
+                  <p class="amount-label">Ingresos</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="amount-box">
+                  <p class="amount">$0.00</p>
+                  <p class="amount-label">Egresos</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="payment-amount h-100">
-                <p class="amount-due">100$</p>
-                <p class="payment-status">Cuota 3/10</p>
-                <p class="overdue">4 Cuotas vencidas.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    
+            <!-- Tarjetas de clientes -->
+            <div class="d-flex flex-column gap-2 mb-3">
 
-        <div class="client-card">
-          <div class="row g-0">
-            <div class="col-md-8">
-              <div class="client-info">
-                <p class="client-name">Nombre Cliente</p>
-                <p class="payment-date">Próximo pago:<br>ma, 30 may, 2025</p>
+              <div class="border rounded border-danger">
+                <div class="d-flex">
+                  <div class="col-md-8 border-end p-3">
+                    <div class="">
+                      <p class="h6">Nombre Cliente</p>
+                      <p class="mb-1"><small>Próximo pago:</small><br>
+                        <span class="fw-bold text-secondary">ma, 30 may, 2025</span>
+                      </p>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <small>Pendiente:</small>
+                          <div class="fw-bold text-secondary">1000$</div>
+                        </div>
+                        <div>
+                          <small>Modalidad:</small>
+                          <div class="fw-bold text-secondary">Mensual</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-3 d-flex align-items-center">
+                    <div class="d-flex flex-column text-center gap-1">
+                      <div class="fw-bold fs-5">100$</div>
+                      <small class="">Cuota 3/10</small>
+                      <small class="text-danger">4 Cuotas vencidas.</small>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="payment-amount h-100">
-                <p class="amount-due">100$</p>
+
+              <div class="border rounded ">
+                <div class="d-flex">
+                  <div class="col-md-8 border-end p-3">
+                    <div class="">
+                      <p class="h6">Nombre Cliente</p>
+                      <p class="mb-1"><small>Próximo pago:</small><br>
+                        <span class="fw-bold text-secondary">ma, 30 may, 2025</span>
+                      </p>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <small>Pendiente:</small>
+                          <div class="fw-bold text-secondary">1000$</div>
+                        </div>
+                        <div>
+                          <small>Modalidad:</small>
+                          <div class="fw-bold text-secondary">Mensual</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-3 d-flex align-items-center">
+                    <div class="d-flex flex-column text-center gap-1">
+                      <div class="fw-bold fs-5">100$</div>
+                      <small class="">Cuota 3/10</small>
+                      <small class="text-danger">4 Cuotas vencidas.</small>
+                    </div>
+                  </div>
+                </div>
               </div>
+
             </div>
-          </div>
-        </div>
-        <div class="client-card">
-          <div class="row g-0">
-            <div class="col-md-8">
-              <div class="client-info">
-                <p class="client-name">Nombre Cliente</p>
-                <p class="payment-date">Próximo pago:<br>ma, 30 may, 2025</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="payment-amount h-100">
-                <p class="amount-due">100$</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="client-card">
-          <div class="row g-0">
-            <div class="col-md-8">
-              <div class="client-info">
-                <p class="client-name">Nombre Cliente</p>
-                <p class="payment-date">Próximo pago:<br>ma, 30 may, 2025</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="payment-amount h-100">
-                <p class="amount-due">100$</p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -242,8 +186,13 @@
 
     <!-- Gráfico de gastos -->
     <div class="col-md-6">
-      <h2 class="section-title">Gráficos 2024</h2>
-      <canvas id="myChart"></canvas>
+      <div class="card h-100">
+        <div class="card-body">
+          <h2 class="section-title">Gráficos 2024</h2>
+          <canvas id="myChart"></canvas>
+        </div>
+        
+      </div>
     </div>
   </div>
 

@@ -1,5 +1,4 @@
 
-
-.bg-fondo{
-    background-color: #F1F4F8;
+.background-body{
+    background-color: var(--body-bg-color-rgb);
 }

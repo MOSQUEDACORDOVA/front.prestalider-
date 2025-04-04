@@ -1,11 +1,14 @@
-<header class="navbar sticky-top flex-md-nowrap p-0 bg-fondo shadow-sm ">
-  <div class="col-8 col-md-3 col-lg-2 me-0 px-3 fs-6 border-end  border-2 border-sm-0 ">
+<header class="navbar sticky-top flex-md-nowrap p-0 bg-fondo background-body border-bottom">
+  <div class="col-8 col-md-3 col-lg-2 me-0 px-3 fs-6 border-end border-sm-0 ">
     <div class="row d-flex align-items-center py-2">
-      <div class="col-12 d-flex align-items-center">
-        <img src.bind="logo" alt="Logo" class="img-fluid rounded-circle border" width="70px" />
-        <div class="ms-3">
-          <div class="fs-5 fw-bold mb-0">User</div>
-          <small class="text-muted">Administrador</small>
+      <div class="col-3 col-md-4">
+        <img src.bind="logo" alt="Logo" class="img-fluid rounded-circle border" />
+      </div>
+      <div class="col-9 col-md-8 aling-items-center">
+        <div class="fw-bold">User</div>
+        <div class="fs-6">
+          <!--FALTA ELIPISIS PARA EVITAR DESBORDAMIENTO-->
+          <small class="text-secondary">Role and Mail</small>
         </div>
       </div>
     </div>
@@ -17,7 +20,7 @@
     <import from="../notification-component/notification-component"></import>
     <!-- Usando el componente NotificationComponent -->
     <notification-component></notification-component>
-    <button class="btn  border border-dark bg-transparent rounded-circle" type="button">
+    <button class="btn  border bg-transparent rounded-circle" type="button">
       <i class="hgi hgi-stroke hgi-moon-02 fs-5"></i>
     </button>
     <button class="btn button-color-g d-flex align-items-center gap-2" type="button">
