@@ -1,1 +1,4 @@
-console.log('Loaded payment page');
+// tu-view-model.js
+export class PaymentPage {
+  
+}
