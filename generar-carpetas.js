@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 
 // Lista de nombres de páginas a generar
 const pages = [
-  'form-solicitud',
+  'detail-loan',
 ];
 
 const __filename = fileURLToPath(import.meta.url);

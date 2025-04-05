@@ -1,1 +1,30 @@
-.loan-page { color: black; }
+.modal-footer-custom {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-top: 1px solid #dee2e6;
+}
+
+.btn-amortizacion {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    
+}
+
+.btn-cancelar {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #dc3545;
+}
+
+.btn-guardar {
+    color: white;
+}
+.section-title {
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #6c757d;
+    border-bottom: 1px solid #dee2e6;
+}

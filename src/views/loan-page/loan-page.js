@@ -1,1 +1,3 @@
-console.log('Loaded loan page');
+export class LoanPage {
+
+}

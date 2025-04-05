@@ -1,0 +1,49 @@
+/* Estilos para el recibo de pago (voucher) */
+.recibo-pago {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  .recibo-item {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .firma-container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .firma-linea {
+    border-top: 1px solid #000;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .firma-texto {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .qr-code {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+  
+  /* Botones para el recibo */
+  #btnImprimirRecibo,
+  #btnWhatsAppRecibo {
+    min-width: 120px;
+  }
+  
+  #btnWhatsAppRecibo {
+    background-color: #25d366;
+    border-color: #25d366;
+  }
+  
+  #btnWhatsAppRecibo:hover {
+    background-color: #128c7e;
+    border-color: #128c7e;
+  }

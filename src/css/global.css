@@ -34,6 +34,7 @@ body{
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
     background-color: var(--bs-primary-fuerte);
     border-color: var(--bs-btn-active-border-color2);
+    color: white;
 }
 
 .card{
@@ -44,4 +45,26 @@ body{
 .btn-primary, .btn-primary:hover{
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
+}
+/* andres codigo para las etiquetas a del mismo color que el primary */
+.hiper-vinculo{
+    color: var(--bs-primary);
+}
+.hiper-vinculo:hover{
+    color: white;
+}
+/* outline para el mismo color de boton pero outline */
+.btn-outline-primary {
+    color: #BD6DFF;
+    border: 1px solid #BD6DFF;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    color: #fff;
+    background-color: #BD6DFF;
+    border-color: #BD6DFF;
+    text-decoration: none;
 }

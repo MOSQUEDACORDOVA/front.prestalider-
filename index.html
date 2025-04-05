@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,8 +37,6 @@
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
     }
-
-    
   </style>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
@@ -86,40 +85,206 @@
     });
   </script>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const btnImprimirRecibo = document.getElementById("btnImprimirRecibo")
+      if (btnImprimirRecibo) {
+        btnImprimirRecibo.addEventListener("click", () => {
+          const contenidoRecibo = document.getElementById("recibo-content").innerHTML
+          const ventanaImpresion = window.open("", "_blank")
+
+          ventanaImpresion.document.write(`
+                <html>
+                <head>
+                    <title>Recibo de Pago</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            max-width: 400px;
+                            margin: 0 auto;
+                            padding: 15px;
+                        }
+                        .recibo-item {
+                            margin-bottom: 8px;
+                            font-size: 14px;
+                        }
+                        .firma-container {
+                            margin-top: 20px;
+                            margin-bottom: 10px;
+                        }
+                        .firma-linea {
+                            border-top: 1px solid #000;
+                            width: 80%;
+                            margin: 0 auto;
+                        }
+                        .firma-texto {
+                            font-size: 12px;
+                            margin-top: 5px;
+                            text-align: center;
+                        }
+                        .text-center {
+                            text-align: center;
+                        }
+                        .text-info {
+                            color: #17a2b8;
+                        }
+                        .text-danger {
+                            color: #dc3545;
+                        }
+                        .qr-code {
+                            max-width: 100px;
+                            margin: 0 auto;
+                        }
+                        h4 {
+                            color: #17a2b8;
+                        }
+                    </style>
+                </head>
+                <body>
+                    ${contenidoRecibo}
+                </body>
+                </html>
+            `)
+
+          ventanaImpresion.document.close()
+          ventanaImpresion.focus()
+
+          // Imprimir después de que se cargue el contenido
+          setTimeout(() => {
+            ventanaImpresion.print()
+            // ventanaImpresion.close();
+          }, 500)
+        })
+      }
+
+      // Manejar el botón de WhatsApp
+      const btnWhatsAppRecibo = document.getElementById("btnWhatsAppRecibo")
+      if (btnWhatsAppRecibo) {
+        btnWhatsAppRecibo.addEventListener("click", () => {
+          // Crear un mensaje para WhatsApp con los detalles del recibo
+          const mensaje = encodeURIComponent(
+            "RECIBO DE PAGO\n" +
+            "Recibo No.: 247533\n" +
+            "Fecha: 24/02/2025 06:38 pm\n" +
+            "Recibido de: RAHAM RAFAEL REYES LOPEZ\n" +
+            "Monto total: $10.76\n" +
+            "Concepto: PAGO CUOTA 4/8\n" +
+            "Forma de pago: Efectivo\n" +
+            "Capital: $608.02\n" +
+            "Interés: $202.74\n" +
+            "Capital pendiente: $8,419.36\n" +
+            "Próximo pago: 25/03/2025\n\n" +
+            "Gracias por tu pago!!",
+          )
+
+          // Abrir WhatsApp Web con el mensaje predefinido
+          window.open(`https://wa.me/?text=${mensaje}`, "_blank")
+        })
+      }
+
+      // Obtener parámetros de la URL para la página de detalles
+      function getUrlParameter(name) {
+        name = name.replace(/[[]/, "\\[").replace(/[\]]/, "\\]")
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)")
+        var results = regex.exec(location.search)
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "))
+      }
+
+      // Si estamos en la página de detalles, cargar los datos del préstamo
+      if (window.location.pathname.includes("detalle-prestamo")) {
+        var id = getUrlParameter("id")
+        console.log("Cargando detalles del préstamo ID:", id || "default")
+      }
+      // Manejar el botón de enviar mensaje
+  const btnEnviarMensaje = document.getElementById("btnEnviarMensaje")
+  if (btnEnviarMensaje) {
+    btnEnviarMensaje.addEventListener("click", () => {
+      // Obtener los datos del formulario
+      const telefono = document.getElementById("telefonoInput").value
+      const mensaje = document.getElementById("mensajeTextarea").value
+
+      // Verificar si el checkbox de WhatsApp está marcado
+      const whatsappCheck = document.getElementById("whatsappCheck")
+
+      if (whatsappCheck && whatsappCheck.checked) {
+        // Enviar mensaje por WhatsApp
+        const mensajeEncoded = encodeURIComponent(mensaje)
+        window.open(`https://wa.me/${telefono}?text=${mensajeEncoded}`, "_blank")
+      }
+
+      // Cerrar el modal
+      const enviarMensajeModal = bootstrap.Modal.getInstance(document.getElementById("enviarMensajeModal"))
+      enviarMensajeModal.hide()
+
+      // Mostrar notificación de éxito (opcional)
+      alert("Mensaje enviado con éxito")
+    })
+  }
+
+  // Manejar cambio de plantilla
+  const plantillaSelect = document.getElementById("plantillaSelect")
+  if (plantillaSelect) {
+    plantillaSelect.addEventListener("change", function () {
+      const mensajeTextarea = document.getElementById("mensajeTextarea")
+      const plantilla = this.value
+
+      // Cambiar el mensaje según la plantilla seleccionada
+      if (plantilla === "CARTA SALDO") {
+        mensajeTextarea.value =
+          "Distinguid@ Sr/Sra. MARIA DEL CARMEN, Cédula No 031-0252812-6\n\nMediante este documento, certificamos que su préstamo 28987, de fecha $PrestamoFecha, por un monto de DOP$5,000.00 ha sido saldado, por lo que rectificamos que su compromiso por dicho préstamo fue cancelado."
+      } else if (plantilla === "RECORDATORIO DE PAGO") {
+        mensajeTextarea.value =
+          "Estimad@ Sr/Sra. MARIA DEL CARMEN, Cédula No 031-0252812-6\n\nLe recordamos que su próximo pago de préstamo está programado para el 25/03/2025. El monto a pagar es de DOP$810.76.\n\nGracias por su atención."
+      } else if (plantilla === "AVISO DE MORA") {
+        mensajeTextarea.value =
+          "Estimad@ Sr/Sra. MARIA DEL CARMEN, Cédula No 031-0252812-6\n\nLe informamos que su préstamo presenta un atraso en los pagos. Por favor, póngase en contacto con nosotros lo antes posible para regularizar su situación.\n\nGracias por su atención."
+      }
+    })
+  }
+
+  // Obtener parámetros de la URL para la página de detalles
+  function getUrlParameter(name) {
+    name = name.replace(/[[]/, "\\[").replace(/[\]]/, "\\]")
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)")
+    var results = regex.exec(location.search)
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "))
+  }
+
+  // Si estamos en la página de detalles, cargar los datos del préstamo
+  if (window.location.pathname.includes("detalle-prestamo")) {
+    var id = getUrlParameter("id")
+    console.log("Cargando detalles del préstamo ID:", id || "default")
+  }
       // Get elements
       const solicitarLink = document.getElementById('solicitar-link');
       const consultarLink = document.getElementById('consultar-link');
       const solicitarContent = document.getElementById('solicitar-content');
       const consultarContent = document.getElementById('consultar-content');
-      
+
       // Function to show solicitar content
       function showSolicitar() {
-          solicitarLink.classList.add('active');
-          consultarLink.classList.remove('active');
-          solicitarContent.classList.add('active');
-          consultarContent.classList.remove('active');
+        solicitarLink.classList.add('active');
+        consultarLink.classList.remove('active');
+        solicitarContent.classList.add('active');
+        consultarContent.classList.remove('active');
       }
-      
+
       // Function to show consultar content
       function showConsultar() {
-          consultarLink.classList.add('active');
-          solicitarLink.classList.remove('active');
-          consultarContent.classList.add('active');
-          solicitarContent.classList.remove('active');
+        consultarLink.classList.add('active');
+        solicitarLink.classList.remove('active');
+        consultarContent.classList.add('active');
+        solicitarContent.classList.remove('active');
       }
-      
+
       // Add event listeners
       solicitarLink.addEventListener('click', showSolicitar);
       consultarLink.addEventListener('click', showConsultar);
-      
+
       // Show solicitar content by default
       showSolicitar();
-  });
-  
-</script>
-  
+    });
+
+  </script>
+
 </body>
-
-
