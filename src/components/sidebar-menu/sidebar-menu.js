@@ -1,4 +1,7 @@
 export class SidebarMenu {
-    message = 'Esto es un ejemplo de componente!';
+  isSubmenuOpen = true;
+
+  toggleSubmenu() {
+    this.isSubmenuOpen = !this.isSubmenuOpen;
   }
-  
+}

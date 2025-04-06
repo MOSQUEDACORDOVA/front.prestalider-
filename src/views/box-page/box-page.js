@@ -1,1 +1,3 @@
-console.log('Loaded box page');
+export class BoxPage {
+
+}

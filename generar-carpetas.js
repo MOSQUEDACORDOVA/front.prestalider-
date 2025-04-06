@@ -4,7 +4,8 @@ import { fileURLToPath } from 'url';
 
 // Lista de nombres de páginas a generar
 const pages = [
-  'wallet',
+  'box-bills',
+  'box-otherincome',
 ];
 
 const __filename = fileURLToPath(import.meta.url);

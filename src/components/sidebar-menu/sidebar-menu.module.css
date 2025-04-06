@@ -34,3 +34,33 @@ li a {
     border-radius: 4px;
   }
   
+  .submenu {
+    display: none;
+    padding-left: 1rem;
+  }
+  
+  .submenu.show {
+    display: block;
+  }
+  
+  .nav-item.main-item {
+    cursor: pointer;
+  }
+  
+  .rotate-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .rotate-icon.rotated {
+    transform: rotate(90deg);
+  }
+  .cajalist li{
+    list-style: none;
+  }
+  .rotate-180 {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+  .transition {
+    transition: transform 0.3s ease;
+  }
